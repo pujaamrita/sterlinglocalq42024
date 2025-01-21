@@ -1,0 +1,28 @@
+<!-- 
+Licensed Materials - Property of IBM
+IBM Sterling Order Management (5725-D10), IBM Order Management (5737-D18)
+(C) Copyright IBM Corp. 2001, 2019 All Rights Reserved.
+US Government Users Restricted Rights - Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+ -->
+<preferences>
+<configsynch>
+<Settings ReportsDir="">
+<AuditDeployment ValidateLockid="y" ValidateOldValues="y" ValidateRecordExistsBeforeDelete="y"/>
+</Settings>
+<SourceDatabases>
+<Database Name="SYSTEMDB" className="com.ibm.db2.jcc.DB2Driver" dbType="db2" folder="" jdbcURL="jdbc:db2://db2server:50000/OMDB" schema="omdb" user="db2inst1"/>
+</SourceDatabases>
+<TargetDatabases>
+<Database Name="DEFAULTXMLDB" className="" dbType="XML" folder="/home/ubuntuadmin/oms/cdtXmlToDB/cdtfileslocal_01July24" httpurl="" httpuser="" jdbcURL="" schema="" user=""/>
+</TargetDatabases>
+<SourceTargetPrefs>
+<SourceTargetPrefs>
+<SourceTargetPair SourceDatabase="SYSTEMDB" TargetDatabase="DEFAULTXMLDB">
+<Ignore>
+<!-- <Table Name="YFS_USER"/> -->
+</Ignore>
+</SourceTargetPair>
+</SourceTargetPrefs>
+</SourceTargetPrefs>
+</configsynch>
+</preferences>

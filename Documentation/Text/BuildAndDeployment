@@ -1,0 +1,56 @@
+
+Steps to be followed:-
+1.Get the project repository and keep in the location /home/ubuntuadmin/oms/project/smcfscustomdev
+                                                      <--------path-------------->|<-Project Repo-->|
+2.Update the extensions, if we have nay customization.
+  Copy global folder from code repo to sterling extensions folder (/home/ubuntuadmin/oms/devtoolkit_docker/runtime/extensions)
+3.initiate CDT to the Environment.
+4.Initiate build and deployment.
+
+
+5.How to check logs:- docker logs -f --tail 90000000 om-appserver
+6.Backup your previous code repository before initiating build.
+	sudo rm -r smcfscustomdev
+	sudo mv /home/ubuntuadmin/oms/project/smcfscustomdev smcfscustomdev_BKP_`date +%d-%m-%y` 
+
+
+
+
+3.1<------------ CDT STEPS ----------------------------------->
+
+DB_2_XML:
+Update the ydkpref.xml:- Navigate to /home/ubuntuadmin/oms/devtoolkit_docker/runtime/resources/ydkresources
+update the ydkprefs.xml as per the sample provided in the code repository location :smcfscustomdev\Documentation\Xml\ydkprefs_DB_2_XML
+
+Navigate to bin folder:-/home/ubuntuadmin/oms/devtoolkit_docker/runtime/bin  and execute below command.			
+																				   <-path where XML will be exported-->
+CMD:-      sudo ./cdtshell.sh -Source SYSTEMDB -Target DEFAULTXMLDB -DefaultXMLDir /home/ubadmin/oms/cdtfileslocal
+																		   
+																				   
+XML_2_DB :
+Update the ydkpref.xml:- Navigate to /home/ubuntuadmin/oms/devtoolkit_docker/runtime/resources/ydkresources
+update the ydkprefs.xml as per the sample provided in the code repository location :smcfscustomdev\Documentation\Xml\ydkprefs_XML_2_DB
+Navigate to bin folder:-/home/ubuntuadmin/oms/devtoolkit_docker/runtime/bin  and execute below command.
+ 																		   <-path where XML will be imported-->
+sudo ./cdtshell.sh -Source DEFAULTXMLDB -Target SYSTEMDB -DefaultXMLDir /home/ubuntuadmin/oms/cdtXmlToDB/cdtfileslocal_01July24
+
+
+
+4.1<------------ to build and deploy the application---------->
+
+<--------->|<------------------------ Source--------------------------------------------------------------------------> <--------Target-------------> 
+sudo cp -r /mnt/c/Users/HemantKumar/Documents/workspace-spring-tool-suite-4-4.21.1.RELEASE/OMS-IBMJapan/smcfscustomdev /home/ubuntuadmin/oms/project
+cd /home/ubuntuadmin/oms/devtoolkit_docker/runtime/bin
+																							 <----prpject code repository-------------->
+sudo ./sci_ant.sh -f ../devtoolkit/devtoolkit_extensions.xml importfromproject -Dprojectdir=/home/ubuntuadmin/oms/project/smcfscustomdev
+
+cd /home/ubuntuadmin/oms/devtoolkit_docker/compose
+sudo ./om-compose.sh update-extn /home/ubuntuadmin/oms/devtoolkit_docker/extensions.jar
+
+
+7.<--------Credentials------------------->
+Ubuntu login:- ubuntuadmin@ubuntuadmin
+Any sterling application login:- admin@password
+
+admin_jp / password --> if user wants to see all the information in Japanese language.
+admin_en /password --> if user wants to see all the information in English language.

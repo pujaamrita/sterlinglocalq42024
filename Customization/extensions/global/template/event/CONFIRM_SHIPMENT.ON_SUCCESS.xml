@@ -1,0 +1,187 @@
+<Shipment ActualDeliveryDate="" ActualFreightCharge=""
+    ActualShipmentDate="" AllowOverage="" AppointmentNo=""
+    AssignedToUserId="" AssociationAction="" BBNMinVolume=""
+    BBNMinWeight="" BackroomPickRequired="" BillToAddressKey=""
+    BillToCustomerId="" BolNo="" BreakBulkLoadKey="" BreakBulkNode=""
+    BuyerMarkForNodeId="" BuyerOrganizationCode=""
+    BuyerReceivingNodeId="" CODPayMethod="" CarrierAccountNo=""
+    CarrierServiceCode="" CarrierType="" Code="" CommercialValue=""
+    Currency="" DeliveryCode="" DeliveryMethod="" DeliveryPlanKey=""
+    DeliveryTS="" DestinationZone="" DoNotVerifyCaseContent=""
+    DoNotVerifyPalletContent="" DocumentType="" DownLoadCount=""
+    EmailReturnLabel="" EnterpriseCode="" EspCheckRequired=""
+    ExpectedDeliveryDate="" ExpectedShipmentDate="" ExportTaxpayerID=""
+    FreightTerms="" FromAddressKey="" FromAppointment=""
+    HasOtherShipments="" HazardousMaterialFlag="" HoldLocation=""
+    ITDate="" ITNNo="" ITNo="" InvoiceComplete=""
+    IsPackProcessComplete="" IsPackingRequired=""
+    IsPackingRequiredWithContents="" IsProductPlacingComplete=""
+    IsShipmentLevelIntegration="" IsSingleOrder="" LevelOfService=""
+    LinesEntered="" Lockid="" ManifestKey="" ManifestNo=""
+    ManuallyEntered="" MergeNode="" NextAlertTs="" NumOfCartons=""
+    NumOfPallets="" OrderAvailableOnSystem="" OrderHeaderKey=""
+    OrderNo="" OrderReleaseKey="" OriginZone=""
+    OverrideManualShipmentEntry="" PackAndHold="" PackListType=""
+    ParentShipmentKey="" PickListNo="" PickTicketPrinted=""
+    PickticketNo="" PipelineKey="" PodNo="" ProNo="" ProfileID=""
+    ReceivingNode="" ReleaseNo="" RequestedCarrierServiceCode=""
+    RequestedDeliveryDate="" RequestedShipmentDate=""
+    ReturnAuthorizationNumber="" ReturnBillingAccount="" ReturnByDate=""
+    ReturnCarrierService="" ReturnFreightTerms="" SCAC=""
+    ScacAndService="" ScacAndServiceKey="" ScacIntegrationRequired=""
+    SealNo="" SellerOrganizationCode="" ShipDate="" ShipMode=""
+    ShipNode="" ShipToCustomerId="" ShipVia="" ShipmentClosedFlag=""
+    ShipmentConfirmUpdatesDone="" ShipmentConsolidationGroupId=""
+    ShipmentContainerizedFlag="" ShipmentDeliverUpdatesDone=""
+    ShipmentKey="" ShipmentNo="" ShipmentPlannedFlag=""
+    ShipmentSortLocationId="" ShipmentType="" Status="" StatusDate=""
+    ToAppointment="" TotalActualCharge="" TotalEstimatedCharge=""
+    TotalNumOfPickableSKUs="" TotalVolume="" TotalVolumeUOM=""
+    TotalWeight="" TotalWeightUOM="" TrackingNo="" TrailerNo=""
+    WorkOrderApptKey="" WorkOrderKey="">
+    <ToAddress AddressLine1="" AddressLine2="" AddressLine3=""
+        AddressLine4="" AddressLine5="" AddressLine6=""
+        AlternateEmailID="" Beeper="" City="" Company="" Country=""
+        DayFaxNo="" DayPhone="" Department="" EMailID="" ErrorTxt=""
+        EveningFaxNo="" EveningPhone="" FirstName="" HttpUrl=""
+        IsCommercialAddress="" JobTitle="" LastName="" MiddleName=""
+        MobilePhone="" OtherPhone="" PersonID="" PersonInfoKey=""
+        PreferredShipAddress="" State="" Suffix="" TaxGeoCode=""
+        Title="" UseCount="" VerificationStatus="" ZipCode=""/>
+    <FromAddress AddressLine1="" AddressLine2="" AddressLine3=""
+        AddressLine4="" AddressLine5="" AddressLine6=""
+        AlternateEmailID="" Beeper="" City="" Company="" Country=""
+        DayFaxNo="" DayPhone="" Department="" EMailID="" ErrorTxt=""
+        EveningFaxNo="" EveningPhone="" FirstName="" HttpUrl=""
+        IsCommercialAddress="" JobTitle="" LastName="" MiddleName=""
+        MobilePhone="" OtherPhone="" PersonID="" PersonInfoKey=""
+        PreferredShipAddress="" State="" Suffix="" TaxGeoCode=""
+        Title="" UseCount="" VerificationStatus="" ZipCode=""/>
+    <Containers>
+        <Container ActualFreightCharge="" ActualNoOfReturnLabels=""
+            ActualWeight="" ActualWeightUOM="" AppliedWeight=""
+            AppliedWeightUOM="" AstraCode="" BarcodeDiscount=""
+            BasicFreightCharge="" CODReturnTrackingNo=""
+            CarriageValue="" ContainerGrossWeight=""
+            ContainerGrossWeightUOM="" ContainerGroup=""
+            ContainerHeight="" ContainerHeightUOM="" ContainerLength=""
+            ContainerLengthUOM="" ContainerNetWeight=""
+            ContainerNetWeightUOM="" ContainerNo="" ContainerScm=""
+            ContainerSeqNo="" ContainerType="" ContainerWidth=""
+            ContainerWidthUOM="" CustomsValue="" DeclaredValue=""
+            DimmedFlag="" DiscountAmount="" ExportLicenseExpDate=""
+            ExportLicenseNo="" HasOtherContainers=""
+            IncludedInInventoryPallet="" IsHazmat="" IsManifested=""
+            IsPackProcessComplete="" IsReceived="" LoadKey=""
+            OversizedFlag="" ParentContainerGroup=""
+            ParentContainerKey="" ParentContainerNo=""
+            RequiredNoOfReturnLabels="" RoutingCode="" SCAC=""
+            ShipmentContainerKey="" ShipmentKey=""
+            SpecialServicesSurcharge="" SystemSuggested="" TrackingNo=""
+            Ucc128code="" Zone="">
+            <ContainerDetails>
+                <ContainerDetail ContainerDetailsKey="" ItemID=""
+                    ProductClass="" Quantity="" ShipmentContainerKey=""
+                    ShipmentKey="" ShipmentLineKey="" UnitOfMeasure="">
+                    <ShipmentTagSerials>
+                        <ShipmentTagSerial BatchNo=""
+                            ContainerDetailKey="" LotAttribute1=""
+                            LotAttribute2="" LotAttribute3=""
+                            LotKeyReference="" LotNumber=""
+                            ManufacturingDate="" Quantity=""
+                            RevisionNo="" SerialNo="" ShipByDate=""
+                            ShipmentLineKey="" ShipmentTagSerialKey=""/>
+                    </ShipmentTagSerials>
+                    <ShipmentLine DocumentType="" IsHazmat=""
+                        ItemDesc="" OrderNo="" PrimeLineNo=""
+                        ReleaseNo="" ShipmentLineNo=""
+                        ShipmentSubLineNo="" SubLineNo="">
+                        <ShipmentLineInvAttRequest BatchNo=""
+                            LotAttribute1="" LotAttribute2=""
+                            LotAttribute3="" LotKeyReference=""
+                            LotNumber="" ManufacturingDate="" RevisionNo=""/>
+                    </ShipmentLine>
+                </ContainerDetail>
+            </ContainerDetails>
+            <Instructions>
+                <Instruction InstructionDetailKey="" InstructionText=""
+                    InstructionType="" InstructionURL=""
+                    InstructionUsage="" ReferenceKey="" SequenceNo="" TableName=""/>
+            </Instructions>
+            <ContainerActivities TotalNumberOfRecords="">
+                <ContainerActivity ActivityCode="" ActivityTimeStamp=""
+                    ActivityUserId="" ContainerActivityKey=""
+                    Createprogid="" Createts="" Createuserid=""
+                    IsCommercialAddress="" IsException="" Lockid=""
+                    Modifyprogid="" Modifyts="" Modifyuserid="" Notes=""
+                    ShipmentContainerKey="" TaxGeoCode="">
+                    <ActivityLocation ActivityLocationId=""
+                        ActivityNodeKey="" AddressLine1=""
+                        AddressLine2="" AddressLine3="" AddressLine4=""
+                        AddressLine5="" AddressLine6="" City=""
+                        Company="" Country="" FirstName=""
+                        IsCommercialAddress="" LastName="" MiddleName=""
+                        State="" TaxGeoCode="" ZipCode=""/>
+                </ContainerActivity>
+            </ContainerActivities>
+        </Container>
+    </Containers>
+    <Instructions>
+        <Instruction InstructionDetailKey="" InstructionText=""
+            InstructionType="" InstructionURL="" InstructionUsage=""
+            ReferenceKey="" SequenceNo="" TableName=""/>
+    </Instructions>
+    <Notes>
+        <Note AuditTransactionId="" ContactReference="" ContactTime=""
+            ContactType="" ContactUser="" CustomerSatIndicator=""
+            NoteText="" Priority="" ReasonCode="" SequenceNo=""
+            Tranid="" Tranname="" VisibleToAll="">
+            <User Username="" Usertype=""/>
+        </Note>
+    </Notes>
+    <ShipmentLines>
+        <ShipmentLine ActualQuantity="" BackroomPickComplete=""
+            BackroomPickedQty="" BackroomPickedQuantity=""
+            BuyerMarkForNodeId="" CancelReason=""
+            ChainedFromOrderHeaderKey="" ChainedFromOrderLineKey=""
+            CountryOfOrigin="" CustomerPickedQuantity=""
+            CustomerPoLineNo="" CustomerPoNo="" DocumentType=""
+            ExternalReleaseIdentifier="" FifoNo=""
+            GroupSequenceNumber="" IsCustomerPickComplete="" IsHazmat=""
+            IsPackComplete="" IsPickable="" ItemDesc="" ItemID=""
+            KitCode="LK" LevelOfService="" NetWeight="" NetWeightUom=""
+            OrderAvailableOnSystem="" OrderHeaderKey="" OrderLineKey=""
+            OrderNo="" OrderReleaseKey="" OverShipQuantity=""
+            PickLocation="" PickLocationSeq="" PlacedQuantity=""
+            PrimeLineNo="" ProductClass="" Quantity=""
+            ReceivedQuantity="" ReleaseNo="" RequestedSerialNo=""
+            ReturnShippingLabelLevel="" Segment="" SegmentType=""
+            ShipToCustomerId="" ShipmentConsolidationGroupId=""
+            ShipmentKey="" ShipmentLineKey="" ShipmentLineNo=""
+            ShipmentSubLineNo="" ShortageQty=""
+            ShortageResolutionReason="" SubLineNo="" UnitOfMeasure="" WaveNo="">
+            <ShipmentLineInvAttRequest BatchNo="" LotAttribute1=""
+                LotAttribute2="" LotAttribute3="" LotKeyReference=""
+                LotNumber="" ManufacturingDate="" RevisionNo=""/>
+            <ShipmentTagSerials>
+                <ShipmentTagSerial BatchNo="" ContainerDetailKey=""
+                    LotAttribute1="" LotAttribute2="" LotAttribute3=""
+                    LotKeyReference="" LotNumber="" ManufacturingDate=""
+                    Quantity="" RevisionNo="" SerialNo="" ShipByDate=""
+                    ShipmentLineKey="" ShipmentTagSerialKey=""/>
+            </ShipmentTagSerials>
+            <Instructions>
+                <Instruction InstructionDetailKey="" InstructionText=""
+                    InstructionType="" InstructionURL=""
+                    InstructionUsage="" ReferenceKey="" SequenceNo="" TableName=""/>
+            </Instructions>
+        </ShipmentLine>
+    </ShipmentLines>
+    <ShipmentCharges>
+        <ShipmentCharge ActualCharge="" ChargeCategory="" ChargeName=""
+            ChargeNameKey="" EstimatedCharge="" InvoiceNo=""
+            KeyReference1="" KeyReference2="" LoadKey=""
+            LoadShipmentChargeKey="" PayeeOrganizationCode=""
+            ShipmentKey="" isHistory=""/>
+    </ShipmentCharges>
+</Shipment>

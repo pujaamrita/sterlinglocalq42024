@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ServiceNameDetails>
+   <ServiceNameDetail 
+isCustom="Y" ServiceName="CreateSOFromQuoteSyncService" Purpose="To Create SalesOrders From Provided Quote as OrderNo">
+       
+	   <!--InputXMl= -->
+       <Order OrderNo="Y100000100"/>
+       
+	   <!--OutputXMl=-->
+       <OrderList>
+           <Order DocumentType="0001" EnterpriseCode="IBM-Japan" NoOfLines="2" OrderHeaderKey="20240628090422272468" OrderNo="Y100003700" OrderType="Sales(Regular)"/>
+           <Order DocumentType="0001" EnterpriseCode="IBM-Japan" NoOfLines="1" OrderHeaderKey="20240628090433272487" OrderNo="Y100003701" OrderType="SubscriptionContract"/>
+       </OrderList>
+   </ServiceNameDetail>
+   
+   <ServiceNameDetail 
+isCustom="Y" ServiceName="CreateSOFromQuoteSyncService" Purpose="To Create monthly contract order from Provided SubscriptionContract salesOrder as OrderNo">
+       
+	   <!--InputXMl= -->
+       <Order Action="MonthlyOrderForSC" OrderNo="Y100000100"/>
+	   
+       <!--OutputXMl=-->
+       <OrderList>
+           <Order DocumentType="0001" EnterpriseCode="IBM-Japan" NoOfLines="1" OrderHeaderKey="20240628090433272487" OrderNo="Y100003701" OrderType="MonthlyRenewal"/>
+       </OrderList>
+   </ServiceNameDetail>
+
+   <ServiceNameDetail 
+isCustom="Y" ApiName="manageItem" Purpose="To createthe item">
+
+       <!--InputXMl= -->
+       <ItemList ComputeUnitCost="" InsertMissingAttributeAllowedValues="" ValidateAdditionalAttributeValues="">
+           <Item Action="Manage" AssociateItemToCategories="" CanUseAsServiceTool="" CheckInventoryBeforeDelete="" GlobalItemID="" ItemGroupCode="PROD" ItemID="Subscription-Sales-A" ItemKey="" OrganizationCode="IBM-Japan" SubCatalogOrganizationCode="" SyncTS="" UnitOfMeasure="EACH">
+               <PrimaryInformation AgeVerificationCode="" AllowGiftWrap="" AssumeInfiniteInventory="" BOMXML="" BundleFulfillmentMode="00" BundlePricingStrategy="PARENT" CapacityPerOrderedQty="" CapacityQuantityStrategy="" ColorCode="" ConfigurationModelName="" ConfiguredModelKey="" CostCurrency="USD" CountryOfOrigin="" CreditWOReceipt="" DefaultProductClass="Good" Description="Subscription-Sales-A" EffectiveEndDate="" EffectiveStartDate="" ExtendedDescription="" ExtendedDisplayDescription="" FixedCapacityQtyPerLine="" FixedPricingQtyPerLine="" ImageID="" ImageLabel="" ImageLocation="" InvoiceBasedOnActuals="" IsAirShippingAllowed="" IsConfigurable="" IsDeliveryAllowed="Y" IsEligibleForShippingDiscount="" IsForwardingAllowed="Y" IsFreezerRequired="" IsHazmat="N" IsModelItem="" IsParcelShippingAllowed="" IsPickupAllowed="Y" IsPreConfigured="" IsProcurementAllowed="" IsReturnService="" IsReturnable="N" IsShippingAllowed="Y" IsSoldSeparately="" IsStandaloneService="" IsSubOnOrderAllowed="" ItemType="Subscription" Keywords="" KitCode="" ManufacturerItem="" ManufacturerItemDesc="" ManufacturerName="" MasterCatalogID="" MaxOrderQuantity="" MinOrderQuantity="" MinReturnWindow="" MinimumCapacityQuantity="" ModelItemUnitOfMeasure="" NumSecondarySerials="" OrderingQuantityStrategy="" PricingQuantityConvFactor="" PricingQuantityStrategy="" PricingUOM="" PricingUOMStrategy="" PrimaryEnterpriseCode="" PrimarySupplier="" ProductLine="" RequiresProdAssociation="" ReturnWindow="" RunQuantity="" SerializedFlag="" ServiceTypeID="" ShipmentConsolidationWindow="" ShortDescription="Subscription-Sales-A" SizeCode="" Status="3000" TaxableFlag="" UnitCost="1" UnitHeight="" UnitHeightUOM="" UnitLength="" UnitLengthUOM="" UnitWeight="" UnitWeightUOM="" UnitWidth="" UnitWidthUOM="" />
+               <!-- <WMSItemAttributes ConstrainedByHeight="" Deformable="" PackByVolume="" PackedHeight="" PackedLength="" PackedWidth="" StackHeightIncrease=""/> -->
+               <InventoryParameters ATPRule="" AdvanceNotificationTime="" DefaultExpirationDays="" FutureSafetyFactorPercentage="" InventoryMonitorRule="" IsFifoTracked="" IsItemBasedAllocationAllowed="" IsSerialTracked="" LeadTime="" MaximumNotificationTime="" MinNotificationTime="" NodeLevelInventoryMonitorRule="" OnhandSafetyFactorPercentage="" OnhandSafetyFactorQuantity="" ProcessingTime="" RequiresDGOverride="" TagControlFlag="" TimeSensitive="" UseUnplannedInventory="" />
+               <!-- <SafetyFactorDefinitions Reset=""><SafetyFactorDefinition DeliveryMethod="Required" FutureSafetyFactorPercentage="" OnhandSafetyFactorPercentage="" OnhandSafetyFactorQuantity="" Operation=""/></SafetyFactorDefinitions> -->
+               <!-- <ClassificationCodes CommodityCode="" ECCNNo="" HarmonizedCode="" HazmatClass="" Model="" NAICSCode="" NMFCClass="" NMFCCode="" OperationalConfigurationComplete="" PickingType="" PostingClassification="" Schedule_B_Code="" StorageType="" TaxProductCode="" UNSPSC="" VelocityCode=""/> -->
+               <!-- <ItemAliasList Reset=""><ItemAlias Action="" AliasName="Required" AliasValue="Required"/></ItemAliasList><ItemServiceSkillList Reset=""><ItemServiceSkill Operation="" ServiceSkillId="Required"/></ItemServiceSkillList><ItemOptionList Reset=""><ItemOption ItemKey="" ItemOptionKey="" Operation="" OptionItemId="" OptionUOM=""/></ItemOptionList><ItemServiceAssocList Reset="N"><ItemServiceAssoc CategoryKey="" HoldSchedTillCompletion="Y" ItemKey="" ItemServiceAssocKey="" Operation="" PricingProductQuantity="" PricingServiceQuantity="" ProductQuantity="" ServiceItemGroupCode="PS" ServiceItemId="ITEM-01" ServiceQuantity="" ServiceTimeOffset="" ServiceUOM="EACH"><ItemServiceAssocSkillList Reset="N"><ItemServiceAssocSkill /></ItemServiceAssocSkillList></ItemServiceAssoc></ItemServiceAssocList><AlternateUOMList Reset=""><AlternateUOM Height="" HeightUOM="" IsOrderingUOM="" ItemKey="" ItemUOMKey="" Length="" LengthUOM="" Operation="" Quantity="" UnitOfMeasure="" Weight="" WeightUOM="" Width="" WidthUOM=""/></AlternateUOMList><ItemInstructionList Reset=""><ItemInstruction InstructionCode="" InstructionText="" InstructionType="" ItemInstructionKey="" ItemKey="" Operation="" SeqNo=""/></ItemInstructionList><ItemExclusionList><ItemExclusion ExclusionCode="Required"/><Remove><ItemExclusion ExclusionCode="Required"/></Remove></ItemExclusionList><AdditionalAttributeList Reset=""><AdditionalAttribute AttributeDomainID="Required" AttributeGroupID="Required" DoubleValue="" IntegerValue="" Name="Required" Operation="Manage" Value=""/></AdditionalAttributeList><Components Reset=""><Component ComponentItemID="" ComponentItemKey="" ComponentOrganizationCode="" ComponentUnitOfMeasure="" KitQuantity="Required" Operation=""/></Components><LanguageDescriptionList Reset=""><LanguageDescription Description="" ExtendedDescription="" ExtendedDisplayDescription="" LocaleCode="Required" Operation="" ShortDescription=""/></LanguageDescriptionList><InventoryTagAttributes BatchNo="" ItemKey="" ItemTagKey="" LotAttribute1="" LotAttribute2="" LotAttribute3="" LotKeyReference="" LotNumber="" ManufacturingDate="" RevisionNo=""/><ServiceActivities><ServiceActivity ActivityCode="Required" ActivitySeqNo="Required" Operation=""><ServiceActivityInstructions><ServiceActivityInstruction InstructionText="" InstructionURL="" Operation="" SequenceNo="Required"/></ServiceActivityInstructions></ServiceActivity></ServiceActivities><AssetList Reset=""><Asset AssetID="" AssetKey="" ContentID="" ContentLocation="" ContentSize="" Description="" DisplayLocalizedFieldInLocale="" Label="" Operation="" Type=""><AssetLocaleList Reset=""><AssetLocale AssetKey="" AssetLocaleKey="" ContentID="" ContentLocation="" Country="" Description="" Label="" Language="" Operation="" Variant=""/></AssetLocaleList></Asset></AssetList><WIPCostFactorPurpose CostFactorGroupKey="Required" PostingClassification="" SupplierOrganizationCode=""/><ItemLocaleList Reset=""><ItemLocale Country="" ImageID="" ItemKey="" ItemLocaleKey="" Language="" Operation="" Variant=""><PrimaryInformation Description="" ExtendedDescription="" ExtendedDisplayDescription="" ImageID="" ImageLabel="" ImageLocation="" ShortDescription=""/></ItemLocale></ItemLocaleList> -->
+               <!-- <CategoryList><Category CategoryID="" CategoryPath=""/></CategoryList><CategoryAssociations IgnoreCategoryAssociationException="N"><Category Action="" CategoryKey="" CategoryPath=""/></CategoryAssociations> -->
+           </Item>
+           <Item Action="Manage" AssociateItemToCategories="" CanUseAsServiceTool="" CheckInventoryBeforeDelete="" GlobalItemID="" ItemGroupCode="PROD" ItemID="Subscription-Sales-B" ItemKey="" OrganizationCode="IBM-Japan" SubCatalogOrganizationCode="" SyncTS="" UnitOfMeasure="EACH">
+               <PrimaryInformation AgeVerificationCode="" AllowGiftWrap="" AssumeInfiniteInventory="" BOMXML="" BundleFulfillmentMode="00" BundlePricingStrategy="PARENT" CapacityPerOrderedQty="" CapacityQuantityStrategy="" ColorCode="" ConfigurationModelName="" ConfiguredModelKey="" CostCurrency="USD" CountryOfOrigin="" CreditWOReceipt="" DefaultProductClass="Good" Description="Subscription-Sales-B" EffectiveEndDate="" EffectiveStartDate="" ExtendedDescription="" ExtendedDisplayDescription="" FixedCapacityQtyPerLine="" FixedPricingQtyPerLine="" ImageID="" ImageLabel="" ImageLocation="" InvoiceBasedOnActuals="" IsAirShippingAllowed="" IsConfigurable="" IsDeliveryAllowed="Y" IsEligibleForShippingDiscount="" IsForwardingAllowed="Y" IsFreezerRequired="" IsHazmat="N" IsModelItem="" IsParcelShippingAllowed="" IsPickupAllowed="Y" IsPreConfigured="" IsProcurementAllowed="" IsReturnService="" IsReturnable="N" IsShippingAllowed="Y" IsSoldSeparately="" IsStandaloneService="" IsSubOnOrderAllowed="" ItemType="Subscription" Keywords="" KitCode="" ManufacturerItem="" ManufacturerItemDesc="" ManufacturerName="" MasterCatalogID="" MaxOrderQuantity="" MinOrderQuantity="" MinReturnWindow="" MinimumCapacityQuantity="" ModelItemUnitOfMeasure="" NumSecondarySerials="" OrderingQuantityStrategy="" PricingQuantityConvFactor="" PricingQuantityStrategy="" PricingUOM="" PricingUOMStrategy="" PrimaryEnterpriseCode="" PrimarySupplier="" ProductLine="" RequiresProdAssociation="" ReturnWindow="" RunQuantity="" SerializedFlag="" ServiceTypeID="" ShipmentConsolidationWindow="" ShortDescription="Subscription-Sales-B" SizeCode="" Status="3000" TaxableFlag="" UnitCost="1" UnitHeight="" UnitHeightUOM="" UnitLength="" UnitLengthUOM="" UnitWeight="" UnitWeightUOM="" UnitWidth="" UnitWidthUOM="" />
+               <!-- <WMSItemAttributes ConstrainedByHeight="" Deformable="" PackByVolume="" PackedHeight="" PackedLength="" PackedWidth="" StackHeightIncrease=""/> -->
+               <InventoryParameters ATPRule="" AdvanceNotificationTime="" DefaultExpirationDays="" FutureSafetyFactorPercentage="" InventoryMonitorRule="" IsFifoTracked="" IsItemBasedAllocationAllowed="" IsSerialTracked="" LeadTime="" MaximumNotificationTime="" MinNotificationTime="" NodeLevelInventoryMonitorRule="" OnhandSafetyFactorPercentage="" OnhandSafetyFactorQuantity="" ProcessingTime="" RequiresDGOverride="" TagControlFlag="" TimeSensitive="" UseUnplannedInventory="" />
+               <!-- <SafetyFactorDefinitions Reset=""><SafetyFactorDefinition DeliveryMethod="Required" FutureSafetyFactorPercentage="" OnhandSafetyFactorPercentage="" OnhandSafetyFactorQuantity="" Operation=""/></SafetyFactorDefinitions> -->
+               <!-- <ClassificationCodes CommodityCode="" ECCNNo="" HarmonizedCode="" HazmatClass="" Model="" NAICSCode="" NMFCClass="" NMFCCode="" OperationalConfigurationComplete="" PickingType="" PostingClassification="" Schedule_B_Code="" StorageType="" TaxProductCode="" UNSPSC="" VelocityCode=""/> -->
+               <!-- <ItemAliasList Reset=""><ItemAlias Action="" AliasName="Required" AliasValue="Required"/></ItemAliasList><ItemServiceSkillList Reset=""><ItemServiceSkill Operation="" ServiceSkillId="Required"/></ItemServiceSkillList><ItemOptionList Reset=""><ItemOption ItemKey="" ItemOptionKey="" Operation="" OptionItemId="" OptionUOM=""/></ItemOptionList><ItemServiceAssocList Reset="N"><ItemServiceAssoc CategoryKey="" HoldSchedTillCompletion="Y" ItemKey="" ItemServiceAssocKey="" Operation="" PricingProductQuantity="" PricingServiceQuantity="" ProductQuantity="" ServiceItemGroupCode="PS" ServiceItemId="ITEM-01" ServiceQuantity="" ServiceTimeOffset="" ServiceUOM="EACH"><ItemServiceAssocSkillList Reset="N"><ItemServiceAssocSkill /></ItemServiceAssocSkillList></ItemServiceAssoc></ItemServiceAssocList><AlternateUOMList Reset=""><AlternateUOM Height="" HeightUOM="" IsOrderingUOM="" ItemKey="" ItemUOMKey="" Length="" LengthUOM="" Operation="" Quantity="" UnitOfMeasure="" Weight="" WeightUOM="" Width="" WidthUOM=""/></AlternateUOMList><ItemInstructionList Reset=""><ItemInstruction InstructionCode="" InstructionText="" InstructionType="" ItemInstructionKey="" ItemKey="" Operation="" SeqNo=""/></ItemInstructionList><ItemExclusionList><ItemExclusion ExclusionCode="Required"/><Remove><ItemExclusion ExclusionCode="Required"/></Remove></ItemExclusionList><AdditionalAttributeList Reset=""><AdditionalAttribute AttributeDomainID="Required" AttributeGroupID="Required" DoubleValue="" IntegerValue="" Name="Required" Operation="Manage" Value=""/></AdditionalAttributeList><Components Reset=""><Component ComponentItemID="" ComponentItemKey="" ComponentOrganizationCode="" ComponentUnitOfMeasure="" KitQuantity="Required" Operation=""/></Components><LanguageDescriptionList Reset=""><LanguageDescription Description="" ExtendedDescription="" ExtendedDisplayDescription="" LocaleCode="Required" Operation="" ShortDescription=""/></LanguageDescriptionList><InventoryTagAttributes BatchNo="" ItemKey="" ItemTagKey="" LotAttribute1="" LotAttribute2="" LotAttribute3="" LotKeyReference="" LotNumber="" ManufacturingDate="" RevisionNo=""/><ServiceActivities><ServiceActivity ActivityCode="Required" ActivitySeqNo="Required" Operation=""><ServiceActivityInstructions><ServiceActivityInstruction InstructionText="" InstructionURL="" Operation="" SequenceNo="Required"/></ServiceActivityInstructions></ServiceActivity></ServiceActivities><AssetList Reset=""><Asset AssetID="" AssetKey="" ContentID="" ContentLocation="" ContentSize="" Description="" DisplayLocalizedFieldInLocale="" Label="" Operation="" Type=""><AssetLocaleList Reset=""><AssetLocale AssetKey="" AssetLocaleKey="" ContentID="" ContentLocation="" Country="" Description="" Label="" Language="" Operation="" Variant=""/></AssetLocaleList></Asset></AssetList><WIPCostFactorPurpose CostFactorGroupKey="Required" PostingClassification="" SupplierOrganizationCode=""/><ItemLocaleList Reset=""><ItemLocale Country="" ImageID="" ItemKey="" ItemLocaleKey="" Language="" Operation="" Variant=""><PrimaryInformation Description="" ExtendedDescription="" ExtendedDisplayDescription="" ImageID="" ImageLabel="" ImageLocation="" ShortDescription=""/></ItemLocale></ItemLocaleList> -->
+               <!-- <CategoryList><Category CategoryID="" CategoryPath=""/></CategoryList><CategoryAssociations IgnoreCategoryAssociationException="N"><Category Action="" CategoryKey="" CategoryPath=""/></CategoryAssociations> -->
+           </Item>
+       </ItemList>
+	   
+       <!--OutputXMl=-->
+	   
+   </ServiceNameDetail>
+   
+   <ServiceNameDetail isCustom="N" ApiName="createOrder" Purpose="To Create Quote From API tester" Note="this is advisable to create Quote from order hub
+ ui as there are couple of configurations to be considered for order fulfillment">
+
+       <!--InputXMl= -->
+       <Order CustomerEmailId="ravindra.singh@ibm.com" CustomerFirstName="Ravindra" CustomerLastName="Singh" CustomerZipCode="48126" EnterpriseCode="IBM-Japan" OrderType="Quote" OrderDate="2024-06-28T10:46:41Z" OrderNo="" PaymentStatus="NOT_APPLICABLE">
+           <OrderLines>
+               <OrderLine DeliveryMethod="SHP" OrderedQty="1" ShipNode="IBM_JAPAN_Consult">
+                   <Item ItemDesc="Hardware-A" ItemID="Hardware-A" UnitOfMeasure="PIECES" />
+               </OrderLine>
+               <OrderLine DeliveryMethod="SHP" OrderedQty="1" ShipNode="IBM_JAPAN_Consult">
+                   <Item ItemDesc="Service Item-A" ItemID="Service-A" UnitOfMeasure="PIECES" />
+               </OrderLine>
+               <OrderLine DeliveryMethod="SHP" OrderedQty="1" ShipNode="IBM_JAPAN_Consult">
+                   <Item ItemDesc="Subscription Contract item" ItemID="Service-C" UnitOfMeasure="PIECES" />
+               </OrderLine>
+           </OrderLines>
+           <PersonInfoShipTo AddressLine1="23535 Michigan Ave" AddressLine2="23535 Michigan Ave" City="Dearborn" Company="" Country="" EMailID="hemant.kumar23@ibm.com" FirstName="Hemant" IsCommercialAddress="Y" LastName="Kumar" MobilePhone="9124457689" State="" ZipCode="48124" />
+           <PersonInfoBillTo AddressLine1="One American Street " AddressLine2="" City="Dearborn" Company="" Country="US" EMailID="hemant.kumar23@ibm.com" FirstName="Hemant" IsCommercialAddress="N" LastName="Kumar" MobilePhone="9124457689" State="MI" ZipCode="48126" />
+           <PriceInfo Currency="Japan Yen" />
+           <PaymentMethods>
+               <PaymentDetails PaymentType="Advance" />
+           </PaymentMethods>
+       </Order>
+	   
+	   <!-- OutputXMl -->
+	   
+   </ServiceNameDetail>
+   
+   <ServiceNameDetail 
+isCustom="N" ApiName="createOrder" Purpose="To Create Sales(Regular) order Type from API tester " Note="this is advisable to create Sales(Regular) order via using custom service post Quote creation, below data is for demonstration purpose to visulize data flown in create order">
+       
+	   <!--InputXMl= -->
+       <Order CustomerEmailId="ravindra.singh@ibm.com" CustomerFirstName="Ravindra" CustomerLastName="Singh" CustomerZipCode="48126" EnterpriseCode="IBM-Japan" OrderType="Sales(Regular)" OrderDate="2024-06-28T10:46:41Z" OrderNo="" PaymentStatus="NOT_APPLICABLE">
+           <OrderLines>
+               <OrderLine DeliveryMethod="SHP" OrderedQty="1" ShipNode="IBM_JAPAN_Consult">
+                   <Item ItemDesc="Hardware-A" ItemID="Hardware-A"  UnitOfMeasure="PIECES" />
+               </OrderLine>
+               <OrderLine DeliveryMethod="SHP" OrderedQty="1" ShipNode="IBM_JAPAN_Consult">
+                   <Item ItemDesc="Service Item-A" ItemID="Service-A" UnitOfMeasure="PIECES" />
+               </OrderLine>
+           </OrderLines>
+           <PersonInfoShipTo AddressLine1="23535 Michigan Ave" AddressLine2="23535 Michigan Ave" City="Dearborn" Company="" Country="" EMailID="hemant.kumar23@ibm.com" FirstName="Hemant" IsCommercialAddress="Y" LastName="Kumar" MobilePhone="9124457689" State="" ZipCode="48124" />
+           <PersonInfoBillTo AddressLine1="One American Street " AddressLine2="" City="Dearborn" Company="" Country="US" EMailID="hemant.kumar23@ibm.com" FirstName="Hemant" IsCommercialAddress="N" LastName="Kumar" MobilePhone="9124457689" State="MI" ZipCode="48126" />
+           <PriceInfo Currency="Japan Yen" />
+           <PaymentMethods>
+               <PaymentDetails PaymentType="Advance" />
+           </PaymentMethods>
+       </Order>
+	   
+	   <!--OutputXMl-->
+	   
+   </ServiceNameDetail>
+   
+   <ServiceNameDetail 
+isCustom="N" ApiName="createOrder" Purpose="To Create order type SubscriptionContract from API tester " Note="this is advisable to create SubscriptionContract order via using custom service post Quote creation, below data is for demonstration purpose to visulize data flown in create order"> 
+
+       <!--InputXMl= -->
+       <Order CustomerEmailId="ravindra.singh@ibm.com" CustomerFirstName="Ravindra" CustomerLastName="Singh" CustomerZipCode="48126" EnterpriseCode="IBM-Japan" OrderType="SubscriptionContract" OrderDate="2024-06-28T10:46:41Z" OrderNo="" PaymentStatus="NOT_APPLICABLE">
+           <OrderLines>
+               <OrderLine DeliveryMethod="SHP" OrderedQty="1" ShipNode="IBM_JAPAN_Consult">
+                   <Item ItemDesc="Subscription Contract item" ItemID="Service-C" UnitOfMeasure="PIECES" />
+               </OrderLine>
+           </OrderLines>
+           <PersonInfoShipTo AddressLine1="23535 Michigan Ave" AddressLine2="23535 Michigan Ave" City="Dearborn" Company="" Country="" EMailID="hemant.kumar23@ibm.com" FirstName="Hemant" IsCommercialAddress="Y" LastName="Kumar" MobilePhone="9124457689" State="" ZipCode="48124" />
+           <PersonInfoBillTo AddressLine1="One American Street " AddressLine2="" City="Dearborn" Company="" Country="US" EMailID="hemant.kumar23@ibm.com" FirstName="Hemant" IsCommercialAddress="N" LastName="Kumar" MobilePhone="9124457689" State="MI" ZipCode="48126" />
+           <PriceInfo Currency="Japan Yen" />
+           <PaymentMethods>
+               <PaymentDetails PaymentType="Advance" />
+           </PaymentMethods>
+       </Order>
+	   
+	   <!--OutputXMl-->
+	   
+   </ServiceNameDetail>
+   
+   <ServiceNameDetail 
+isCustom="N" ApiName="adjustInventory" Purpose="To Adjust inventory for different itemType and supply type " Note="Adjust inventory for different itemType and supply type as for  Hardware we have ONHAND and PO_PLANNED tracked inventory and for Service and Subscription items we have infinite inventory">
+
+       <!--InputXMl for hardware item,Onhand  Supply -->
+       <Items>
+           <Item AdjustmentType="ADJUSTMENT" ItemID="Hardware-A" OrganizationCode="IBM Group" Quantity="1000" ShipNode="IBM_JP_DC_1" SupplyType="ONHAND" UnitOfMeasure="PIECES" ></Item>
+       </Items>
+	   
+	   <!--OutputXMl-->
+	   
+   </ServiceNameDetail>
+   
+   <ServiceNameDetail 
+isCustom="N" ApiName="adjustInventory" Purpose="To adjust inventory for Hardwared item , Planned Po Supply ">
+       
+	   <!--InputXMl-->
+       <Items>
+           <Item AdjustmentType="ABSOLUTE" Availability="TRACK" ItemID="Hardware-A" OrganizationCode="IBM-Japan" Quantity="500" ShipNode="IBM_JP_PO_DC" SupplyType="PLANNED_PO" UnitOfMeasure="PIECES" ETA="2024-07-25"/>
+       </Items>
+	   
+	   <!--OutputXMl-->
+	   
+   </ServiceNameDetail>
+   
+   <ServiceNameDetail 
+isCustom="N" ApiName="adjustInventory" Purpose="To adjust inventory for Service item ">
+       
+	   <!--InputXMl-->
+       <Items>
+           <Item AdjustmentType="ADJUSTMENT" ItemID="Service-A" OrganizationCode="IBM-Japan" Quantity="20000" ShipNode="IBM_JAPAN_Consult" Availability="INFINITE" SupplyType="ONHAND" UnitOfMeasure="PIECES" ></Item>
+       </Items>
+	   
+	   <!--OutputXMl-->
+   </ServiceNameDetail>
+   
+   <ServiceNameDetail 
+isCustom="N" ApiName="findInventory" Purpose="To findInventory as per the Sourcing and Scheduling rule defined">
+       
+	   <!--InputXMl= -->
+       <Promise AllocationRuleID="SCH_JAPAN" CheckInventory="Y" OrganizationCode="IBM-Japan">
+           <PromiseLines>
+               <PromiseLine FulfillmentType="SHP" ItemID="Hardware-A"  RequiredQty="1.00" UnitOfMeasure="PIECES" ShipNode="" />
+           </PromiseLines>
+       </Promise>
+	   
+	   <!--OutputXMl-->
+	   
+   </ServiceNameDetail>
+   
+   <ServiceNameDetail 
+isCustom="N" ApiName="getItemPrice" Purpose="for getItemPrice">
+       <!--InputXMl for getItemPrice API  -->
+       <ItemPrice Currency="Japan Yen"
+OrganizationCode="IBM-Japan">
+           <LineItems>
+               <LineItem UnitOfMeasure="PIECES" Quantity="1.00" ItemID="Hardware-A"/>
+           </LineItems>
+       </ItemPrice>
+   </ServiceNameDetail>
+</ServiceNameDetails>

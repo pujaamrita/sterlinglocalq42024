@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<OrderList TotalOrderList="">
+	<Order BillToID="" BuyerOrganizationCode="" CarrierServiceCode="" CustomerEMailID="" CustomerPONo="" CustCustPONo="" DeliveryCode="" DocumentType="" DraftOrderFlag="" EnteredBy="" EnterpriseCode="" EntryType="" FreightTerms="" OrderDate="" OrderNo="" OrderType="" OriginalTax="" OriginalTotalAmount="" OtherCharges="" PaymentStatus="" ReceivingNode="" ReqCancelDate="" ReqDeliveryDate="" ReqShipDate="" SellerOrganizationCode="" ShipToID="">
+		<PriceInfo Currency="" EnterpriseCurrency="" TotalAmount=""/>
+		<OverallTotals GrandCharges="" GrandDiscount="" GrandTax="" GrandTotal="" HdrCharges="" HdrDiscount="" HdrTax="" HdrTotal="" LineSubTotal=""/>
+		<InvoicedTotals GrandCharges="" GrandDiscount="" GrandTax="" GrandTotal="" HdrCharges="" HdrDiscount="" HdrTax="" HdrTotal="" LineSubTotal=""/>
+		<RemainingTotals GrandCharges="" GrandDiscount="" GrandTax="" GrandTotal="" HdrCharges="" HdrDiscount="" HdrTax="" HdrTotal="" LineSubTotal=""/>
+		<OrderLines TotalNumberOfRecords="">
+			<OrderLine DeliveryCode="" DeliveryMethod="" DepartmentCode="" FillQuantity="" FreightTerms="" FulfillmentType="" ItemGroupCode="" OrderedQty="" OriginalOrderedQty="" OtherCharges="" ReqDeliveryDate="" ReqShipDate="">
+				<ItemDetails ItemID="" OrganizationCode="">
+					<PrimaryInformation DefaultProductClass="" Description="" ItemType=""/>
+				</ItemDetails>
+			</OrderLine>
+		</OrderLines>
+		<PaymentMethods>
+			<PaymentMethod AwaitingAuthInterfaceAmount="" AwaitingChargeInterfaceAmount="" BillToKey="" CashBackAmount="" ChargeSequence="" CheckNo="" CheckReference="" CreditCardExpDate="" CreditCardName="" CreditCardNo="" CreditCardType="" CustomerAccountNo="" CustomerPONo="" DebitCardNo="" DisplayCreditCardNo="" DisplayCustomerAccountNo="" DisplayDebitCardNo="" DisplayPaymentReference1="" DisplayPrimaryAccountNo="" DisplaySvcNo="" FirstName="" FundsAvailable="" GetFundsAvailableUserExitInvoked="" IncompletePaymentType="" LastName="" MaxChargeLimit="" MiddleName="" PaymentKey="" PaymentReference1="" PaymentReference2="" PaymentReference3="" PaymentReference4="" PaymentReference5="" PaymentReference6="" PaymentReference7="" PaymentReference8="" PaymentReference9="" PaymentTemplateType="" PaymentType="" PaymentTypeGroup="" PlannedRefundAmount="" PrimaryAccountNo="" RequestedAuthAmount="" RequestedChargeAmount="" RequestedRefundAmount="" SuspendAnyMoreCharges="" SvcNo="" TotalAltRefundedAmount="" TotalAuthorized="" TotalCharged="" TotalRefundedAmount="" UnlimitedCharges="">
+</PaymentMethod>
+		</PaymentMethods>
+		<PersonInfoBillTo AddressID="" AddressLine1="" AddressLine2="" AddressLine3="" AddressLine4="" AddressLine5="" AddressLine6="" AlternateEmailID="" Beeper="" City="" Company="" Country="" DayFaxNo="" DayPhone="" Department="" EMailID="" EveningFaxNo="" EveningPhone="" FirstName="" IsAddressVerified="" IsCommercialAddress="" JobTitle="" LastName="" Latitude="" Longitude="" MiddleName="" MobilePhone="" OtherPhone="" PersonID="" PersonInfoKey="" State="" Suffix="" TaxGeoCode="" Title="" ZipCode=""/>
+		<PersonInfoShipTo AddressID="" AddressLine1="" AddressLine2="" AddressLine3="" AddressLine4="" AddressLine5="" AddressLine6="" AlternateEmailID="" Beeper="" City="" Company="" Country="" DayFaxNo="" DayPhone="" Department="" EMailID="" EveningFaxNo="" EveningPhone="" FirstName="" IsAddressVerified="" IsCommercialAddress="" JobTitle="" LastName="" Latitude="" Longitude="" MiddleName="" MobilePhone="" OtherPhone="" PersonID="" PersonInfoKey="" State="" Suffix="" TaxGeoCode="" Title="" ZipCode=""/>
+	</Order>
+</OrderList>
