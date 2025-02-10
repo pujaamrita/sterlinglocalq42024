@@ -40,6 +40,7 @@ public class Constants {
 	public static final String API_CREATE_ORDER = "createOrder";
 	public static final String API_CHANGE_ORDER = "changeOrder";
 	public static final String API_CHANGE_ORDER_STATUS = "changeOrderStatus";
+	public static final String API_ORDER_LIST = "getOrderList";
 
 	// public static final String
 	// GET_ORDER_LIST_TEMPLATE="/global/template/api/getOrderList.xml";
