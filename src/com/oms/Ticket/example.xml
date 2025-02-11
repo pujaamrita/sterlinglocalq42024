@@ -1,0 +1,10 @@
+<supplies>
+	<supply>
+		<Item itemId="10002-0HZ-M3W5" unitOfMeasure="EACH" productClass="" type="ONHAND"
+              shipNode="OHIO_DC" eta="1900-01-01T00:00:00Z" shipByDate="2500-01-01T00:00:002" quantity="200001"/>
+	</supply>
+	<supply>
+		<Item itemId="10002-0HZ-M3W5" unitOfMeasure="EACH" productClass="'" type="ONHAND"
+              shipNode="OHIO_DC" eta="1900-01-01T00:00:00Z" shipByDate="2500-01-01T00:00:00Z" quantity="200001"/>
+	</supply>
+</supplies>
