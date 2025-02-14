@@ -1,0 +1,30 @@
+<DBSchema>
+	<Entities>
+		
+	
+		<Entity TableName="YFS_SHIP_NODE">
+			<!-- table columns -->
+			<Attributes>
+				<Attribute ColumnName="EXTN_VENDOR_TYPE" DataType="Text-40"
+					XMLName="ExtnVendorType" DefaultValue="" Nullable="true" XMLGroup="Extn"
+					Description="Type of Vendor" />
+				<Attribute ColumnName="EXTN_PRICING_RGN" DataType="Text-40"
+					XMLName="ExtnPricingRegion" DefaultValue="" Nullable="true"
+					XMLGroup="Extn" Description="Pricing Region for DCs" />
+				<Attribute ColumnName="EXTN_UNIT_SHP_NO" DataType="Text-40"
+					XMLName="ExtnUnitShipNo" DefaultValue="" Nullable="true" XMLGroup="Extn"
+					Description="This has values from 0-6. Vendor Min Ship Unit" />
+				<Attribute ColumnName="EXTN_MIN_SHIP_QTY" DataType="Text-40"
+					XMLName="ExtnMinShipQty" DefaultValue="" Nullable="true" XMLGroup="Extn"
+					Description="Vendor Min Ship Qty. This is a vendor min qty. OMS will accept values without the fraction." />
+				<Attribute ColumnName="EXTN_DIRECT_VAR" DataType="Flag"
+					XMLName="ExtnDirectVariable" DefaultValue="N" Nullable="true"
+					XMLGroup="Extn" Description="Direct Variable Flag" />
+			</Attributes>
+		</Entity>
+	
+
+		</Entity>
+		<!-- Added to accumulate Bill Back Claim data - End -->
+	</Entities>
+</DBSchema>
